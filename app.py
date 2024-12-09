@@ -110,14 +110,23 @@ for card in st.session_state.food_cards:
     with col1:
         st.text(card["name"])
     with col2:
+        key = f"amount_{card['id']}"
+        if key not in st.session_state:
+            st.session_state[key] = float(card["amount"])
+        
+        # Bind the number input to the session state variable
         new_amount = st.number_input(
             "Amount (grams):",
-            value=float(card["amount"]),
+            value=st.session_state[key],
             step=0.1,
             min_value=0.0,
-            key=f"amount_{card['id']}",
+            key=key,
         )
-        update_carbs(card["id"], new_amount)
+        
+        # Check if the value actually changed
+        if new_amount != card["amount"]:
+            st.session_state[key] = new_amount  # Update session state
+            update_carbs(card["id"], new_amount)  # Update the card values
     with col3:
         if st.button("Delete", key=f"delete_{card['id']}"):
             delete_food_card(card["id"])
