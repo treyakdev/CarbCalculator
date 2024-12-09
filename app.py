@@ -110,9 +110,9 @@ for card in st.session_state.food_cards:
     with col2:
         new_amount = st.number_input(
             "Amount (grams):",
-            value=card["amount"],
-            step=1,
-            min_value=0,
+            value=float(card["amount"]),
+            step=0.1,
+            min_value=0.0,
             key=f"amount_{card['id']}",
         )
         update_carbs(card["id"], new_amount)
