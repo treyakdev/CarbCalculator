@@ -78,7 +78,7 @@ def delete_food_card(card_id):
     st.rerun()  # Force re-render to ensure card is removed immediately
 
 # Update carbs for a specific card
-def update_carbs(card_id, new_amount):
+def update_carbs(card_id, amount):
     for card in st.session_state.food_cards:
         if card["id"] == card_id:
             card["amount"] = amount
@@ -110,9 +110,9 @@ for card in st.session_state.food_cards:
     with col2:
         new_amount = st.number_input(
             "Amount (grams):",
-            value=float(card["amount"]),
-            step=0.1,
-            min_value=0.0,
+            value=card["amount"],
+            step=1,
+            min_value=0,
             key=f"amount_{card['id']}",
         )
         update_carbs(card["id"], new_amount)
