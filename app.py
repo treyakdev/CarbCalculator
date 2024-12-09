@@ -18,7 +18,7 @@ foods = [
     {"name": "Simit (Susamsız)", "grams": 25, "carbs": 15},
     {"name": "Patates", "grams": 90, "carbs": 15},
     {"name": "Kestane", "grams": 30, "carbs": 15},
-    {"name": "Leblebi", "grams": 60, "carbs": 15}
+    {"name": "Leblebi", "grams": 60, "carbs": 15},
     
     {"name": "Elma", "grams": 100, "carbs": 15},
     {"name": "Kayısı", "grams": 100, "carbs": 15},
