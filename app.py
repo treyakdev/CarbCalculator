@@ -7,7 +7,7 @@ foods = [
     {"name": "Ayran", "grams": 300, "carbs": 10},
     {"name": "Kefir", "grams": 200, "carbs": 10},
 
-    
+    {"name": "Crackers", "grams": 15, "carbs": 10},
     {"name": "Ekmek (Tam Buğday, Çavdar, Yulaf)", "grams": 25, "carbs": 15},
     {"name": "Bisküvi (Tuzlu)", "grams": 25, "carbs": 15},
     {"name": "Çorbalar (İşkembe, Paça hariç)", "grams": 15, "carbs": 15},
