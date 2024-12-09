@@ -81,12 +81,10 @@ def delete_food_card(card_id):
 def update_carbs(card_id, new_amount):
     for card in st.session_state.food_cards:
         if card["id"] == card_id:
-            # Update only if the value is actually different
-            if card["amount"] != new_amount:
-                card["amount"] = new_amount
-                card["carbs_per_amount"] = (
-                    new_amount * card["base_carbs"] / card["base_grams"]
-                )
+            card["amount"] = amount
+            card["carbs_per_amount"] = (
+                amount * card["base_carbs"] / card["base_grams"]
+            )
     update_total()
 
 # Main page: Add food section
@@ -110,23 +108,14 @@ for card in st.session_state.food_cards:
     with col1:
         st.text(card["name"])
     with col2:
-        key = f"amount_{card['id']}"
-        if key not in st.session_state:
-            st.session_state[key] = float(card["amount"])
-        
-        # Bind the number input to the session state variable
         new_amount = st.number_input(
             "Amount (grams):",
-            value=st.session_state[key],
+            value=float(card["amount"]),
             step=0.1,
             min_value=0.0,
-            key=key,
+            key=f"amount_{card['id']}",
         )
-        
-        # Check if the value actually changed
-        if new_amount != card["amount"]:
-            st.session_state[key] = new_amount  # Update session state
-            update_carbs(card["id"], new_amount)  # Update the card values
+        update_carbs(card["id"], new_amount)
     with col3:
         if st.button("Delete", key=f"delete_{card['id']}"):
             delete_food_card(card["id"])
