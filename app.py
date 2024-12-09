@@ -88,7 +88,7 @@ def update_carbs(card_id, amount):
     update_total()
 
 # Main page: Add food section
-st.title("Carb Calculator")
+st.title("💜 Princess calculator 💜")
 st.header("Add Food")
 col1, col2 = st.columns([3, 1])
 with col1:
