@@ -6,9 +6,20 @@ foods = [
     {"name": "Yoğurt", "grams": 200, "carbs": 10},
     {"name": "Ayran", "grams": 300, "carbs": 10},
     {"name": "Kefir", "grams": 200, "carbs": 10},
-    {"name": "Ekmek", "grams": 25, "carbs": 15},
+
+    
+    {"name": "Ekmek (Tam Buğday, Çavdar, Yulaf)", "grams": 25, "carbs": 15},
     {"name": "Bisküvi (Tuzlu)", "grams": 25, "carbs": 15},
-    {"name": "Çorbalar", "grams": 25, "carbs": 15},
+    {"name": "Çorbalar (İşkembe, Paça hariç)", "grams": 15, "carbs": 15},
+    {"name": "Pilavlar (Bulgur, Pirinç)", "grams": 15, "carbs": 15},
+    {"name": "Makarna, Erişte, Kuskus", "grams": 15, "carbs": 15},
+    {"name": "Kurubaklagiller (Kuru Fasulye, Nohut, Barbunya vb.)", "grams": 25, "carbs": 15},
+    {"name": "Yufka Böreği", "grams": 25, "carbs": 15},
+    {"name": "Simit (Susamsız)", "grams": 25, "carbs": 15},
+    {"name": "Patates", "grams": 90, "carbs": 15},
+    {"name": "Kestane", "grams": 30, "carbs": 15},
+    {"name": "Leblebi", "grams": 60, "carbs": 15}
+    
     {"name": "Elma", "grams": 100, "carbs": 15},
     {"name": "Kayısı", "grams": 100, "carbs": 15},
     {"name": "Kuru Kayısı", "grams": 20, "carbs": 15},
