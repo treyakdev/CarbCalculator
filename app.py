@@ -8,7 +8,6 @@ foods = [
     {"name": "Kefir", "grams": 200, "carbs": 10},
 
     {"name": "Ülker Sütlü Çikolata", "grams": 4, "carbs": 2.2},
-    
     {"name": "Altınbașak Light Kraker", "grams": 5, "carbs": 3.3},
     {"name": "Ekmek (Tam Buğday, Çavdar, Yulaf)", "grams": 25, "carbs": 15},
     {"name": "Bisküvi (Tuzlu)", "grams": 25, "carbs": 15},
