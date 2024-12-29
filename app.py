@@ -12,7 +12,7 @@ foods = [
     {"name": "Ekmek (Tam Buğday, Çavdar, Yulaf)", "grams": 25, "carbs": 15},
     {"name": "Bisküvi (Tuzlu)", "grams": 25, "carbs": 15},
     {"name": "Çorbalar (İşkembe, Paça hariç)", "grams": 15, "carbs": 15},
-    {"name": "Pilavlar (Bulgur, Pirinç)", "grams": 5, "carbs": 5},
+    {"name": "Pilavlar (Bulgur, Pirinç)", "grams": 1, "carbs": 5},
     {"name": "Makarna, Erişte, Kuskus", "grams": 5, "carbs": 5},
     {"name": "Kurubaklagiller (Kuru Fasulye, Nohut, Barbunya vb.)", "grams": 25, "carbs": 15},
     {"name": "Yufka Böreği", "grams": 25, "carbs": 15},
